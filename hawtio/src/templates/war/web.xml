@@ -69,6 +69,15 @@
         <url-pattern>*.gsp</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>jolokia</servlet-name>
+        <servlet-class>org.jolokia.http.AgentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jolokia</servlet-name>
+        <url-pattern>/jolokia/*</url-pattern>
+    </servlet-mapping>
+
     <session-config>
         <!-- 30 minutes -->
         <session-timeout>30</session-timeout>
